@@ -1,0 +1,42 @@
+.blocklyTreeRow {
+    box-shadow: inset 0 -0.063em 0 0 var(--color-light-grey);
+}
+
+.blocklyText {
+    fill: #000 !important;
+}
+
+.blocklyTreeSelected .blocklyTreeLabel {
+    color: #fff !important;
+}
+
+.blocklyTreeRow.blocklyTreeSelected .blocklyTreeIcon.blocklyTreeIconOpen,
+.blocklyTreeRow.blocklyTreeSelected .blocklyTreeIcon.blocklyTreeIconClosedLtr {
+    filter: invert(100%);
+}
+
+.blocklyTreeIcon.blocklyTreeIconOpen {
+    background-image: url('/public/images/down-arrow.svg') !important;
+    background-position: -0.188em -0.375em !important;
+}
+
+.blocklyTreeIcon.blocklyTreeIconClosedLtr {
+    background-image: url('/public/images/down-arrow.svg') !important;
+    background-position: -0.188em -0.375em !important;
+}
+
+.blocklyTreeRow.blocklyTreeSelected {
+    background-color: var(--color-blue) !important;
+}
+
+.blocklyTreeRow:not(.blocklyTreeSelected):hover {
+    background-color: var(--color-light-grey) !important;
+}
+
+.blocklyToolboxDiv .blocklyTreeRow {
+    color: #000;
+}
+
+.blocklyEditableText tspan {
+    fill: #000 !important;
+}
